@@ -1,5 +1,5 @@
 plugins {
-    id 'me.champeau.gradle.jmh' version '0.2.0'
+      id "me.champeau.gradle.jmh" version "0.4.7"
 }
 
 apply plugin: 'idea'
@@ -9,13 +9,8 @@ apply plugin: 'me.champeau.gradle.jmh'
 group 'link.pellegrino'
 version '1.0.0-SNAPSHOT'
 
-jmh {
-    jmhVersion = '1.10.4'
-    humanOutputFile = null
-}
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_10
+targetCompatibility = JavaVersion.VERSION_1_10
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
